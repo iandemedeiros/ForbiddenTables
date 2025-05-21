@@ -266,7 +266,7 @@ strong{
     color: white;
 }
 
-.accordion-body a {
+.accordion-body .tabelas {
     padding: 0.5rem 2rem;
     margin: 0px;
     transition: background-color .3s ease-in-out;
@@ -277,7 +277,6 @@ strong{
 }
 
 
-.accordion-body a:hover{
+.accordion-body .tabelas:hover{
     background-color: #bc4848;
-
 }
