@@ -1,0 +1,12 @@
+.accordion-body{
+    --bs-accordion-bg: red !important;
+    border: none;
+    text-align: left;
+}
+
+.accordion-button {
+    color: #ffffff;
+    background-color: #242323;
+    font-size: 1.3rem;
+    border: none;
+}
