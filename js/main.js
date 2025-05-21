@@ -49,7 +49,7 @@ function gerar_defeito() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-        <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+        <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Defeito na Fortaleza</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -78,7 +78,7 @@ function gerar_evento_calote() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Calote ao Funcionário</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -107,7 +107,7 @@ function gerar_evento_desprotegida() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); overflow: scroll;">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Fortaleza Desprotegida</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -136,7 +136,7 @@ function gerar_evento_manutencao() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Manutenção de Forteleza</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -403,7 +403,7 @@ function gerar_infortunio_magico() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortúnio Mágico</h2>
             <p>Efeito: ${resultado.efeito}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -435,7 +435,7 @@ function gerar_ferimentos_horror() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Ferimento de Horror</h2>
             <p>Ferimento: ${resultado.ferimento}</p>
             <p>Letal: ${resultado.letal}</p>
@@ -471,7 +471,7 @@ function gerar_ferimentos_perfuracao() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Ferimento de Perfuração</h2>
             <p>Ferimento: ${resultado.ferimento}</p>
             <p>Letal: ${resultado.letal}</p>
@@ -507,7 +507,7 @@ function gerar_ferimentos_concussivo() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Ferimento Concussivo</h2>
             <p>Ferimento: ${resultado.ferimento}</p>
             <p>Letal: ${resultado.letal}</p>
@@ -543,7 +543,7 @@ function gerar_ferimentos_laceracao() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Ferimento de Laceração</h2>
             <p>Ferimento: ${resultado.ferimento}</p>
             <p>Letal: ${resultado.letal}</p>
@@ -747,7 +747,7 @@ function gerar_infortunios_coleta() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortunios de Coleta</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -777,7 +777,7 @@ function gerar_infortunios_caca() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortunios de Caça</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -807,7 +807,7 @@ function gerar_infortunios_pesca() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortunios de Pesca</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -837,7 +837,7 @@ function gerar_infortunios_maritimos() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortunios Marítimos</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -869,7 +869,7 @@ function gerar_infortunios_acampamento() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortunios de Acampamento</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
@@ -901,7 +901,7 @@ function gerar_infortunios_desbravamento() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style=" position: relative; background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); z-index: 2;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Infortunios de Desbravamento</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
