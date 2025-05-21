@@ -107,7 +107,7 @@ function gerar_evento_desprotegida() {
     modal.style.height = '100%'
     modal.style.backgroundColor = 'rgba(0,0,0,0.5)'
     modal.innerHTML = `
-    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%);">
+    <div class="modal-content" style="background-color: white; margin: auto; padding: 20px; width: 80%; max-width: 500px; top: 50%; transform: translateY(-50%); overflow: scroll;">
             <h2 style="font-weight: bold; border-bottom: 2px solid #191919; padding-bottom: 10px; margin-bottom: 15px;">Fortaleza Desprotegida</h2>
             <p>${resultado}</p>
             <button onclick="this.parentElement.parentElement.remove()" style="background-color: #953E4B; border: 2px solid #FBF4A7; color: white; border-radius: 4px;">Fechar</button>
