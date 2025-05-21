@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forbidden Tables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Robo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+
+        <!-- Menu -->
+        <div class="row xp-0 mx-0">
+            <div class="col px-0 mx-0">
+                <header class="header fixed-top">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container">
+                            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto gap-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><span>HomePage</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><span>Rolagens</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><span>Tabelas</span></s></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><span>Combate</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+
+        <!-- Banner -->
+        <div class="row px-0 mx-0">
+            <div class="col-12 px-0">
+                <div class="banner">
+                    <img src="img/banner_img_2.png" alt="Banner" class="img-fluid w-100 hero">
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo do site -->
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="row w-100 mx-0 px-0 justify-content-center mt-5">
+                <div class="col-10 col-md-8 col-lg-6 mx-0 px-0 text-white text-center">
+                <h1 class="mb-3 introdução-titulo">Rolagens</h1>
+                <hr style="color: white; width: 100%; margin: auto;">
+                <p class="introdução-p mt-3 ps-3">Aqui estão as tabelas do sistema Forbidden Lands, organizadas por categoria para facilitar sua consulta durante o jogo.</p>
+                <hr style="color: white; width: 100%; margin: auto;">
+                <div class="accordion mt-3" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Infortúnios de Jornada
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <a class="tabelas" onclick="gerar_infortunios_desbravamento()">Infortúnio de Desbravamento</a>
+                                <a class="tabelas" onclick="gerar_infortunios_caca()">Infortúnio de Caça</a>
+                                <a class="tabelas" onclick="gerar_infortunios_coleta()">Infortúnio de Coleta</a>
+                                <a class="tabelas" onclick="gerar_infortunios_acampamento()">Infortúnio de Acampamento</a>
+                                <a class="tabelas" onclick="gerar_infortunios_pesca()">Infortúnio de Pesca</a>
+                                <a class="tabelas" onclick="gerar_infortunios_maritimos()">Infortúnio Marítimo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Ferimentos Graves 
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <a class="tabelas" onclick="gerar_ferimentos_laceracao()">Ferimento de Laceração</a>
+                                <a class="tabelas" onclick="gerar_ferimentos_concussivo()">Ferimento Concussivo</a>
+                                <a class="tabelas" onclick="gerar_ferimentos_perfuracao()">Ferimento de Pefuração</a>
+                                <a class="tabelas" onclick="gerar_ferimentos_horror()">Ferimento de Horror</a>
+                                <a class="tabelas" onclick="gerar_infortunio_magico()">Infortúnio Mágico</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Fortaleza
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body fortaleza">
+                                <a class="tabelas" onclick="gerar_defeito()">Evento de Defeito</a>
+                                <a class="tabelas" onclick="gerar_evento_calote()">Evento de Calote</a>
+                                <a class="tabelas" onclick="gerar_evento_desprotegida()">Evento de Desprotegida</a>
+                                <a class="tabelas" onclick="gerar_evento_manutencao()">Evento de Manutenção</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <!-- Menu de Tabelas -->
+
+        </div>
+
+        
+        </div>
+
+<!-- Footer -->
+        <footer class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <hr style="color: white; width: 100%; margin: auto;">
+                    <p class="mt-3 mb-3">&copy; 2025 Forbidden Tables — Forbidden Lands é da Free League Publishing. Todos os direitos pertencem aos autores originais.</p>
+                </div>
+            </div>
+        </footer>
+
+        
+        
+
+
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>

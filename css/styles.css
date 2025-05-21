@@ -1,0 +1,284 @@
+@charset 'UTF-8';
+
+:root{
+    --corprimaria: #ffffff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242323;
+}
+
+header{
+    background-color: #242323;
+    /* 302f2f */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    max-height: 60px;
+    opacity: 1;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.5rem;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.5s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+
+.nav-link::before,
+.nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: #686767;
+    transition: width 0.5s ease;
+}
+
+
+.nav-link::before {
+    top: 0;
+    left: 0;
+}
+
+
+.nav-link::after {
+    bottom: 0;
+    right: 0;
+}
+
+
+.nav-link span::before,
+.nav-link span::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0%;
+    background-color: #686767;
+    transition: height 0.5s ease;
+}
+
+
+.nav-link span::before {
+    top: 0;
+    left: 0;
+}
+
+
+.nav-link span::after {
+    bottom: 0;
+    right: 0;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover span::before,
+.nav-link:hover span::after {
+    height: 100%;
+}
+
+.nav-link:hover {
+    color: #9c9c9c !important;
+}
+
+.navbar-toggler-icon{
+    filter: brightness(1) invert(1);
+}
+
+.navbar-toggler{
+    color: transparent !important;
+    border: 1px solid #686767 !important;
+}
+
+.navbar-toggler:active,.navbar-toggler:focus{
+    color: transparent !important;
+    border: 1px solid white !important;
+}
+
+
+.hero{
+    height: 350px;
+    object-fit: cover;
+    object-position: center 0%;
+    margin-top: 5rem !important;
+}
+
+@media (max-width:992px) {
+    .navbar-nav{
+        margin-top: 2rem !important;
+    }
+    .hero{
+        height: 210px;
+    }
+}
+
+@media (max-width:768px) {
+    .hero{
+        height: 200px;
+    }
+}
+
+@media (max-width:576px) {
+    .hero{
+        height: 150px;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+
+.introdução-titulo{
+    text-align: left;
+    color: #ffffff ;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 500;
+}
+
+.introdução-p{
+    border-left: 4px solid white;
+    text-align: left;
+}
+
+.titulo-tabela{
+    text-align: left;
+    color: #ffffff ;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 500;
+}
+
+.menu-conteudo{
+    padding: 0;
+    list-style-type: none;
+}
+
+.li-menu{
+    text-align: left;
+    background-color: #434343;
+    margin-bottom: 0.1rem !important;
+    list-style-position: inside;
+    padding: 0.2rem 0rem 0.2rem 0.8rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.itens-menu{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.li-menu:hover{
+    background-color: #bc4848;
+    cursor: pointer;
+    
+}
+
+strong{
+    color: #bc4848;
+}
+
+
+.accordion-button {
+    color: #ffffff;
+    background-color: #242323;
+    font-size: 1.3rem;
+    border: 1px solid white;
+}
+
+.accordion-button:active,.accordion-button:focus{
+    background-color: transparent !important;
+}
+
+.accordion-body{
+    --bs-accordion-bg: red !important;
+    border: 1px solid white;
+    text-align: left;
+    
+}
+
+.fortaleza{
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.accordion-item{
+    border: none;
+}
+
+.accordion {
+    --bs-accordion-color: white;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: rgb(0, 255, 221);
+    --bs-accordion-btn-bg: rgb(255, 16, 175);
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(7, 23, 168, 0);
+    --bs-accordion-body-padding-x: 0rem;
+    --bs-accordion-body-padding-y: 0rem;
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: transparent;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: none !important;
+}
+
+.tabelas{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.accordion-body a {
+    padding: 0.5rem 2rem;
+    margin: 0px;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    background-color: #434343;
+    margin-bottom: 0.1rem !important;
+    display: block;
+}
+
+
+.accordion-body a:hover{
+    background-color: #bc4848;
+
+}
