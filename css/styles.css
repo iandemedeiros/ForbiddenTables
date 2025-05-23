@@ -21,8 +21,17 @@ header{
 }
 
 .logo{
-    max-height: 60px;
+    max-height: 90px;
+    max-width: 300px;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .logo{
+        max-height: 90px;
+        max-width: 220px;
+    }
+    
 }
 
 .nav-link {

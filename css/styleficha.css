@@ -23,5 +23,30 @@
 }
 
 .bi-download:hover{
-    color: rgb(19, 19, 19) !important;
+    color: rgb(238, 237, 237) !important;
+}
+
+.modal-header-dark {
+  background-color: #242323;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.download-btn {
+  background-color: #242323 !important;
+  border: none !important;
+  padding-top: 3px !important;
+}
+
+.download-icon {
+  color: #c2c2c2;
+  border-radius: 50%;
+}
+
+.modal-close-btn {
+  margin-top: 17px !important;
+  border: none !important;
+  filter: brightness(10);
+  filter: invert(1);
+  font-size: 1.1rem !important;
+  --bs-btn-close-focus-shadow: 0 0 0 0rem rgb(13 110 253);
 }

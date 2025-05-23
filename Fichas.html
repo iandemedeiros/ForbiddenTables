@@ -71,7 +71,7 @@
                     <!-- Accordion Principal: Fichas Personagem -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaPersonagem" aria-expanded="true" aria-controls="collapseFichaPersonagem">
+                            <button class="accordion-button z-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaPersonagem" aria-expanded="true" aria-controls="collapseFichaPersonagem">
                                 Fichas Personagem
                             </button>
                         </h2>
@@ -82,7 +82,7 @@
                                 <div class="accordion mt-3 ps-3" id="accordionFichaStatus">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaStatus" >
+                                            <button class="accordion-button z-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaStatus" >
                                                 Ficha de Status
                                             </button>
                                         </h2>
@@ -96,21 +96,20 @@
                                                 <div class="modal fade" id="imagemModal" tabindex="-1" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                       <div class="modal-content">
-                                                        <!-- Botões acima da imagem -->
-                                                        
-                                                        <div class="modal-body p-0 text-center">
-                                                          <!-- Imagem centralizada -->
-                                                          <img src="img/FichaStatus.jpg" class="img-fluid rounded" alt="Imagem grande">
-                                                        </div>
+                                                      <!-- Botões acima da imagem -->
+                                                       <div class="d-flex justify-content-between p-2 modal-header-dark">
+                                                          <a href="img/FichaStatus.jpg" download class="btn btn-primary text-center download-btn">
+                                                            <i class="bi bi-download fs-4 download-icon"></i>
+                                                          </a>
 
-                                                        <div class="d-flex justify-content-evenly p-2" style="background-color: transparent !important;">
-                                                            <a href="img/FichaStatus.jpg" download class="btn btn-primary col-5 text-center" style="background-color: #2687a5 !important; border: none; transition: all 0.3s ease; font-family: Arial; font-size: 1rem;">
-                                                              Download
-                                                            </a>
-                                                            <button type="button" class="btn btn-secondary col-5 fechar" data-bs-dismiss="modal" aria-label="Fechar" style="background-color: #242323; border: none; color: white; transition: all 0.3s ease; font-family: Arial; font-size: 1rem;">Fechar</button>
-                                                        </div>                                                      
+                                                          <button type="button" class="btn-close position-absolute top-0 end-0 m-2 fechar btn-close-white modal-close-btn" data-bs-dismiss="modal" aria-label="Fechar"></button>                                                        
+                                                      </div>  
                                                         
-                                                        </div>
+                                                      <div class="modal-body p-0 text-center">
+                                                        <!-- Imagem centralizada -->
+                                                        <img src="img/FichaStatus.jpg" class="img-fluid rounded" alt="Imagem grande">
+                                                      </div>
+                                                      </div>
                                                     </div>
 
                                                   </div>                                            
@@ -123,7 +122,7 @@
                                 <div class="accordion mt-3 ps-3" id="accordionFichaHabilidades">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaHabilidades" aria-expanded="true" aria-controls="collapseFichaHabilidades">
+                                            <button class="accordion-button z-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaHabilidades" aria-expanded="true" aria-controls="collapseFichaHabilidades">
                                                 Ficha de Equipamentos
                                             </button>
                                         </h2>
@@ -136,20 +135,23 @@
 
                                                 <div class="modal fade" id="imagemEquipamento" tabindex="-1" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
-                                                      <div class="modal-content bg-dark">
-                                                        <div class="modal-body p-0 position-relative text-center">
-                                                          <!-- Botão de fechar -->
-                                                          <button type="button" class="btn-close position-absolute top-0 end-0 m-2 fechar" data-bs-dismiss="modal" aria-label="Fechar" style="color: black; margin-top: 0px !important;"></button>
-                                                          <!-- Botão de Download -->
-                                                          <a href="img/FichaEquipamento.jpg" download class="position-absolute top-0 start-0 m-2 text-dark fs-4" style="margin-top: 0px !important; margin-left: 2px !important;width: 40px; height: 40px; background-color: transparent !important;">
-                                                            <i class="bi bi-download" style="color: #7f7f7f;"></i>
+                                                      <div class="modal-content">
+                                                      <!-- Botões acima da imagem -->
+                                                       <div class="d-flex justify-content-between p-2 modal-header-dark">
+                                                          <a href="img/FichaEquipamento.jpg" download class="btn btn-primary text-center download-btn">
+                                                            <i class="bi bi-download fs-4 download-icon"></i>
                                                           </a>
-                                                  
-                                                          <!-- Imagem centralizada -->
-                                                          <img src="img/FichaEquipamento.jpg" class="img-fluid rounded" alt="Imagem grande">
-                                                        </div>
+
+                                                          <button type="button" class="btn-close position-absolute top-0 end-0 m-2 fechar btn-close-white modal-close-btn" data-bs-dismiss="modal" aria-label="Fechar"></button>                                                        
+                                                      </div>  
+                                                        
+                                                      <div class="modal-body p-0 text-center">
+                                                        <!-- Imagem centralizada -->
+                                                        <img src="img/FichaEquipamento.jpg" class="img-fluid rounded" alt="Imagem grande">
+                                                      </div>
                                                       </div>
                                                     </div>
+
                                                   </div>
                                                 
                                             </div>
@@ -161,7 +163,7 @@
                                 <div class="accordion mt-3 ps-3" id="accordionFichaEquipamentos">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaEquipamentos" aria-expanded="true" aria-controls="collapseFichaEquipamentos">
+                                            <button class="accordion-button z-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFichaEquipamentos" aria-expanded="true" aria-controls="collapseFichaEquipamentos">
                                                 Ficha de Fortaleza
                                             </button>
                                         </h2>
@@ -174,18 +176,20 @@
 
                                                 <div class="modal fade" id="imagemFortaleza" tabindex="-1" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
-                                                      <div class="modal-content bg-dark">
-                                                        <div class="modal-body p-0 position-relative text-center">
-                                                          <!-- Botão de fechar -->
-                                                          <button type="button" class="btn-close position-absolute top-0 end-0 m-2 fechar" data-bs-dismiss="modal" aria-label="Fechar" style="color: black; margin-top: 10px !important;"></button>
-                                                          <!-- Botão de Download -->
-                                                          <a href="img/FichaFortaleza.jpg" download class="position-absolute top-0 start-0 m-2 text-dark fs-4" style="margin-top: 0px !important; margin-left: 2px !important; background-color: rgb(255, 255, 255); width: 40px; height: 40px;">
-                                                            <i class="bi bi-download" style="color: #ff0808 !important;"></i>
+                                                      <div class="modal-content">
+                                                      <!-- Botões acima da imagem -->
+                                                       <div class="d-flex justify-content-between p-2 modal-header-dark">
+                                                          <a href="img/FichaFortaleza.jpg" download class="btn btn-primary text-center download-btn">
+                                                            <i class="bi bi-download fs-4 download-icon"></i>
                                                           </a>
-                                                  
-                                                          <!-- Imagem centralizada -->
-                                                          <img src="img/FichaFortaleza.jpg" class="img-fluid rounded" alt="Imagem grande">
-                                                        </div>
+
+                                                          <button type="button" class="btn-close position-absolute top-0 end-0 m-2 fechar btn-close-white modal-close-btn" data-bs-dismiss="modal" aria-label="Fechar"></button>                                                        
+                                                      </div>  
+                                                        
+                                                      <div class="modal-body p-0 text-center">
+                                                        <!-- Imagem centralizada -->
+                                                        <img src="img/FichaFortaleza.jpg" class="img-fluid rounded" alt="Imagem grande">
+                                                      </div>
                                                       </div>
                                                     </div>
                                                   </div>
